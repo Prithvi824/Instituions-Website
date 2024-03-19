@@ -8,7 +8,7 @@ import path from "path";
 
 // Initializes the authentication
 const auth = new google.auth.GoogleAuth({
-  keyFile: path.join(process.cwd(), "creds.json"),
+  Credential: process.env.GOOGLE,
   scopes: ["https://www.googleapis.com/auth/drive"],
 });
 
