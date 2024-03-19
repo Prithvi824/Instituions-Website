@@ -1,0 +1,171 @@
+/* ---------------------- Neceesary Imports -----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------- Neceesary Imports -----------------------*/
+
+/* -------------------------- Font settings -----------------------*/
+@font-face {
+  font-family: "Merge One";
+  src: url(/src/assests/fonts/merge-one.woff) format("woff");
+}
+
+.merge-one {
+  font-family: "Merge One";
+}
+
+.metro {
+  font-family: "Metrophobic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* -------------------------- Font settings ---------------------------*/
+
+/* ------------------------ Nav bar transitons ------------------------*/
+.nav {
+  transform: translateX(calc(100%));
+}
+
+.nav-enter {
+  transform: translateX(0);
+}
+
+.nav-enter-done {
+  transform: translateX(0);
+}
+
+.nav-exit-active {
+  transform: translateX(calc(100%));
+}
+
+.nav-exit-done {
+  transform: translateX(calc(100%));
+}
+
+/* ------------------------ Nav bar transitons ------------------------*/
+
+/* ------------------------ Table CSS ------------------------*/
+.student-time-table>thead>tr {
+  border-collapse: collapse;
+}
+
+.student-time-table>thead>tr>th {
+  padding: 8px 8px 0px 8px;
+  border: 2px solid black;
+}
+
+.student-time-table>tbody>tr>td {
+  text-align: center;
+  padding: 8px 8px 0px 8px;
+  border: 2px solid black;
+  font-family: "Merge One";
+}
+
+.student-teacher-table>thead>tr {
+  border-collapse: collapse;
+}
+
+.student-teacher-table>thead>tr>th {
+  padding: 12px 12px 4px 12px;
+  border: 2px solid black;
+}
+
+.student-teacher-table>tbody>tr>td {
+  text-align: center;
+  border: 2px solid black;
+  font-family: "Merge One";
+}
+
+.fees-table>thead>tr {
+  border-collapse: collapse;
+}
+
+.fees-table>thead>tr>th {
+  padding: 12px 12px 4px 12px;
+  border-right: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+.fees-table>tbody>tr>td {
+  padding: 25px 14px 25px 14px;
+  text-align: center;
+  border-right: 2px;
+  border-top: 2px;
+  border-style: solid;
+  border-color: black;
+  font-family: "Merge One";
+}
+
+.notes-table>thead>tr {
+  border-collapse: collapse;
+}
+
+.notes-table>thead>tr>th {
+  padding: 12px 12px 4px 12px;
+  border-right: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+.notes-table>tbody>tr>td {
+  padding: 8px 0px 8px 0px;
+  text-align: center;
+  border-right: 2px;
+  border-top: 2px;
+  border-style: solid;
+  border-color: black;
+  font-family: "Merge One";
+}
+
+.teacher-time-table>thead>tr {
+  border-collapse: collapse;
+}
+
+.teacher-time-table>thead>tr>th {
+  padding: 8px 8px 0px 8px;
+  border: 2px solid black;
+}
+
+.teacher-time-table>tbody>tr>td {
+  text-align: center;
+  padding: 4px 4px 0px 4px;
+  border: 2px solid black;
+  font-family: "Merge One";
+}
+
+@media screen and (min-width: 769px) {
+  .teacher-time-table>thead>tr>th {
+    padding: 20px 42px 20px 42px;
+    border: 2px solid black;
+    font-size: 24px;
+  }
+
+  .teacher-time-table>tbody>tr>td {
+    text-align: center;
+    padding: 6px 12px 0px 12px;
+    border: 2px solid black;
+    font-size: larger;
+    font-family: "Merge One";
+  }
+
+  .student-time-table>thead>tr>th {
+    padding: 20px 42px 20px 42px;
+    font-size: 24px;
+    border: 2px solid black;
+  }
+
+  .student-time-table>tbody>tr>td {
+    text-align: center;
+    padding: 6px 12px 0px 12px;
+    border: 2px solid black;
+    font-size: larger;
+    font-family: "Merge One";
+  }
+
+
+}
