@@ -1,1 +1,3 @@
 /frontend/node_modules
+/Build/.env
+/Build/creds.json
